@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>JS Bin</title>
 </head>
 
 <body>
-    <!--   Тестовые комментарии для Марии и мира -->
     <div class="container">
         <header class="main-header">
             <div class="main-header-wrp">
@@ -20,7 +20,9 @@
                     <li class="main-header-list-item">Tell us about the advantages and merits</li>
                     <li class="main-header-list-item">Associate the page with the payment system</li>
                 </ul>
-            </div> <img class="main-header-img" src="../HTML5-CSS3-Homework.KarasevaM/img/title.jpg" alt="фото товара" width="200" height="150"> </header>
+            </div> 
+            <img class="main-header-img" src="img/title.jpg" alt="фото товара" width="200" height="150">
+            </header>
         <main class="content">
             <section class="about-product">
                 <div>
@@ -28,8 +30,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </div>
-                <!--<img class="about-product-img" src="#" alt="фото товара" width="430" height="245">-->
-                <video class="about-product-img" controls="controls" width="430" height="245" src="../HTML5-CSS3-Homework.KarasevaM/video/videoplayback.mp4"></video>
+                <video class="about-product-img" controls autoplay poster="img/Planet-Earth-II-poster.jpg" width="430" height="245">
+                    <source src="video/videoplayback.mp4">
+                    Элемент video не поддерживается вашим браузером.
+                    <a href="video/videoplayback.mp4">Скачайте видео</a>
+                </video>
             </section>
             <section class="dignity">
                 <h2>Dignity and pluses product</h2>
@@ -58,28 +63,28 @@
                 <h2>Screenshots</h2>
                 <div class="screenshots-div">
                     <figure class="screenshots-figure"> 
-                       <img src="../HTML5-CSS3-Homework.KarasevaM/img/Screenshot1.jpg" alt="Скриншот" width="200" height="150">
+                       <img src="img/Screenshot1.jpg" alt="Скриншот" width="200" height="150">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                         </figcaption>
                     </figure>
                     <figure class="screenshots-figure"> 
-                       <img src="../HTML5-CSS3-Homework.KarasevaM/img/Screenshot2.jpg" alt="Скриншот" width="200" height="150">
+                       <img src="img/Screenshot2.jpg" alt="Скриншот" width="200" height="150">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                         </figcaption>
                     </figure>
                     <figure class="screenshots-figure screenshots-figure-pb0"> 
-                       <img src="../HTML5-CSS3-Homework.KarasevaM/img/Screenshot3.jpg" alt="Скриншот" width="200" height="150">
+                       <img src="img/Screenshot3.jpg" alt="Скриншот" width="200" height="150">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                         </figcaption>
                     </figure>
                     <figure class="screenshots-figure screenshots-figure-pb0"> 
-                       <img src="../HTML5-CSS3-Homework.KarasevaM/img/Screenshot4.jpg" alt="Скриншот" width="200" height="150">
+                       <img src="img/Screenshot4.jpg" alt="Скриншот" width="200" height="150">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
@@ -93,25 +98,33 @@
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
                            <span class="reviews-img"></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
                            <span class="reviews-img"></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
                            <span class="reviews-img" ></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
                            <span class="reviews-img"></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                 </div>
@@ -128,7 +141,9 @@
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link1" href="#link1" class="child-section-a">buy</a> </div>
+                            </ol> 
+                            <a id="link1" href="#link1" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                     <section class="buy-child-section">
                         <div class="div-child-section">
@@ -143,7 +158,9 @@
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link2" href="#link2" class="child-section-a">buy</a> </div>
+                            </ol> 
+                            <a id="link2" href="#link2" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                     <section class="buy-child-section">
                         <div class="div-child-section">
@@ -163,7 +180,9 @@
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link3" href="#link3" class="child-section-a">buy</a> </div>
+                            </ol> 
+                            <a id="link3" href="#link3" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                 </div>
             </section>
@@ -184,7 +203,11 @@
                     <li class="footer-li" id="tel">80 00 4568 55 55</li>
                 </ul>
                 <div class="div-social">
-                    <a href="#"></a>
+                    <a class="div-social-a" href="#"></a>
+                    <a class="div-social-a" href="#"></a>
+                    <a class="div-social-a" href="#"></a>
+                    <a class="div-social-a" href="#"></a>
+                    <a class="div-social-a" href="#"></a>
                 </div>
             </div>
         </footer>
