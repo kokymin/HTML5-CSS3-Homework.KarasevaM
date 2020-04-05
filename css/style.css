@@ -871,12 +871,10 @@ textarea[placeholder] {
 .div-social {
     min-width: 240px;
     min-height: 42px;
-    /*    border: 1px solid #fff;*/
-    background-image: url(../img/social_buttons_338.png);
     display: flex;
     justify-content: space-between;
     position: relative;
-}
+    } 
 
 
 /*7-ой блок.*/
@@ -885,7 +883,13 @@ textarea[placeholder] {
     display: block;
     min-width: 42px;
     min-height: 42px;
-    /*        border: 1px solid #fff;*/
+    font-family: Socialico;
+    font-size: 60px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
