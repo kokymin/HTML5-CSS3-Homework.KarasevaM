@@ -6,6 +6,13 @@ body {
     font-family: Arial;
 }
 
+/* Класс для добавления фоновых картинок в блоки */
+.background-images
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
 
 /*1-ый блок.*/
 
@@ -94,11 +101,10 @@ body {
 /*1-ый блок. Дочерний блок. Картика/видео */
 
 .main-header-img {
-    display: block;
     width: 469px;
-    min-height: 214px;
+    height: 214px;
     float: right;
-    background-color: #fff;
+    background-image:url(../img/title.jpg);
 }
 
 
@@ -314,7 +320,9 @@ figure:nth-child(2) {
 
 /* 4- ый блок. Изображение */
 
-.screenshots-figure>img {
+
+.screenshots-figure-img {
+    display: block;
     width: 200px;
     height: 150px;
     background-color: #445161;
@@ -322,7 +330,22 @@ figure:nth-child(2) {
     margin: 0 15px 0 0;
 }
 
-
+#screenshot1
+{
+     background-image: url(../img/Screenshot1.jpg);   
+}
+#screenshot2
+{
+     background-image: url(../img/Screenshot2.jpg);   
+}
+#screenshot3
+{
+     background-image: url(../img/Screenshot3.jpg);   
+}
+#screenshot4
+{
+     background-image: url(../img/Screenshot4.jpg);   
+}
 /* 4- ый блок. Описание доп. конт. изображения */
 
 .screenshots-figcaption {
@@ -418,7 +441,7 @@ figure:nth-child(2) {
     background-position: center;
     border-radius: 50%;
     float: left;
-    background-size: 75px 75px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
