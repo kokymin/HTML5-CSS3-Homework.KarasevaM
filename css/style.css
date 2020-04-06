@@ -330,7 +330,7 @@ figure:nth-child(2) {
     margin: 0 15px 0 0;
 }
 
-#screenshot1
+/* #screenshot1
 {
      background-image: url(../img/Screenshot1.jpg);   
 }
@@ -345,7 +345,7 @@ figure:nth-child(2) {
 #screenshot4
 {
      background-image: url(../img/Screenshot4.jpg);   
-}
+} */
 /* 4- ый блок. Описание доп. конт. изображения */
 
 .screenshots-figcaption {
