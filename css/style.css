@@ -139,7 +139,7 @@ body {
 
 .about-product h2 {
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -500,7 +500,7 @@ section.reviews > div > figure:nth-child(4) > figcaption > p {
     font-weight: 400;
     color: #989898;
     text-decoration: none;
-    padding-top: 7px;
+    margin: 7px 0 0 0;
 }
 
 
@@ -571,6 +571,7 @@ section.reviews > div > figure:nth-child(4) > figcaption > p {
 /* 6-ой блок. Параграф (стоимость $) */
 
 .child-section-p {
+    display: block;
     font-size: 40px;
     line-height: 30px;
     font-weight: 400;
