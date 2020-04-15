@@ -1,13 +1,18 @@
 body {
     width: 1280px;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    /* Тест комментborder: 1px solid black; */
     box-sizing: border-box;
     font-family: Arial;
 }
 
-.container {}
-
+/* Класс для добавления фоновых картинок в блоки */
+.background-images
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
 
 /*1-ый блок.*/
 
@@ -96,14 +101,11 @@ body {
 /*1-ый блок. Дочерний блок. Картика/видео */
 
 .main-header-img {
-    display: block;
     width: 469px;
-    min-height: 214px;
+    height: 214px;
     float: right;
-    background-color: #fff;
+    background-image:url(../img/title.jpg);
 }
-
-.content {}
 
 
 /*2-ой блок.*/
@@ -136,7 +138,8 @@ body {
 /*2-ой блок. Заголовок дочернего блока */
 
 .about-product h2 {
-    margin: 0 0 30px 0;
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
@@ -151,7 +154,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    margin: 0 0 20px 0;
+    margin: 20px 0 0 0;
 }
 
 
@@ -162,7 +165,7 @@ body {
     width: 430px;
     min-height: 245px;
     float: right;
-    background-color: #445161;
+    outline: none;
 }
 
 
@@ -170,7 +173,7 @@ body {
 
 .dignity {
     background-color: #f5f5f5;
-    padding: 50px 73px 11px 50px;
+    padding: 50px 73px 51px 50px;
     /* border: 1px solid black; */
     font-family: Arial;
     box-sizing: border-box;
@@ -192,7 +195,7 @@ body {
 /*3-ий блок. Дочерний блок с перечнем преимуществ */
 
 .dignity-div {
-    width: 1157px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -203,21 +206,39 @@ body {
 
 .dignity-details {
     display: flex;
+    width: 50%;
     position: relative;
-    width: 567px;
 }
 
 
 /*3-ий блок. Стилизация summary */
 
 .dignity-summary {
-    display: block;
-    padding: 0 0 0 40px;
-    margin: 0 0 20px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #333333;
+}
+
+details.dignity-details:nth-child(2n+1) > summary {
+    margin: 0 0 36px 0;
+    padding: 0 12px 0 40px;
+}
+
+details.dignity-details:nth-child(2n) > summary {
+    margin: 0 0 36px 0;
+    padding: 0 0 0 40px;
+}
+
+details.dignity-details:nth-child(5) > summary {
+    margin: 0;
+}
+
+details.dignity-details:nth-child(6) > summary {
+    margin: 0;
 }
 
 
@@ -232,7 +253,6 @@ body {
 
 .dignity-summary:before {
     content: "";
-    display: block;
     width: 32px;
     height: 32px;
     background-color: #445161;
@@ -251,7 +271,7 @@ body {
 /* 4- ый блок. Скриншоты */
 
 .screenshots {
-    padding: 51px 66px 19px 50px;
+    padding: 51px 66px 49px 50px;
     /* border: 1px solid black; */
     box-sizing: border-box;
 }
@@ -284,22 +304,25 @@ body {
 .screenshots-figure {
     display: flex;
     padding: 0;
-    margin: 0 0 30px 0;
-    width: 574px;
+    width: 50%;
     min-height: 151px;
+    margin: 0;
 }
 
-
-/*
-.screenshots-figure-pb0 {
-    padding-bottom: 0;
+figure:nth-child(1) {
+    margin: 0 0 30px 0;
 }
-*/
+
+figure:nth-child(2) {
+    margin: 0 0 30px 0;
+}
 
 
 /* 4- ый блок. Изображение */
 
-.screenshots-figure>img {
+
+.screenshots-figure-img {
+    display: block;
     width: 200px;
     height: 150px;
     background-color: #445161;
@@ -307,7 +330,22 @@ body {
     margin: 0 15px 0 0;
 }
 
-
+/* #screenshot1
+{
+     background-image: url(../img/Screenshot1.jpg);   
+}
+#screenshot2
+{
+     background-image: url(../img/Screenshot2.jpg);   
+}
+#screenshot3
+{
+     background-image: url(../img/Screenshot3.jpg);   
+}
+#screenshot4
+{
+     background-image: url(../img/Screenshot4.jpg);   
+} */
 /* 4- ый блок. Описание доп. конт. изображения */
 
 .screenshots-figcaption {
@@ -339,7 +377,6 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #333333;
-    /* word-break: break-all; */
     -webkit-hyphens: auto;
     text-align: left;
 }
@@ -397,11 +434,16 @@ body {
 /* 5- ый блок.Доп. конт. изображение */
 
 .reviews-img {
+    display: block;
     width: 75px;
     height: 75px;
-    background-color: #445161;
+    background-image: url(../img/avatar.png);
+    background-position: center;
     border-radius: 50%;
     float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -423,10 +465,6 @@ body {
     position: relative;
 }
 
-.reviews-p-margin0 {
-    margin-bottom: 0;
-}
-
 
 /* 5- ый блок. Псевдоэлемент перед параграфом (треугольник) */
 
@@ -444,6 +482,14 @@ body {
     left: -12px;
 }
 
+section.reviews > div > figure:nth-child(3) > figcaption > p {
+    margin: 0 0 0 102px;
+}
+
+section.reviews > div > figure:nth-child(4) > figcaption > p {
+    margin: 0 0 0 102px;
+}
+
 
 /* 5- ый блок. Стилизация "автора комментария" */
 
@@ -454,7 +500,7 @@ body {
     font-weight: 400;
     color: #989898;
     text-decoration: none;
-    padding-top: 7px;
+    margin: 7px 0 0 0;
 }
 
 
@@ -525,6 +571,7 @@ body {
 /* 6-ой блок. Параграф (стоимость $) */
 
 .child-section-p {
+    display: block;
     font-size: 40px;
     line-height: 30px;
     font-weight: 400;
@@ -540,8 +587,8 @@ body {
 /* 6-ой блок. Позиционирование списка */
 
 .child-section-ol {
-    margin: 19px 0 19px 0;
-    width: 242px;
+    margin: 19px 0 19px 20px;
+    padding: 0;
 }
 
 
@@ -552,6 +599,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
+    list-style-position: inside;
 }
 
 
@@ -568,106 +616,203 @@ body {
     margin: 0 20px 0px 20px;
     text-align: center;
     text-decoration: none;
-    background-image: url(../img/252.png);
-    background-size: cover;
     padding: 13px 114px 14px 114px;
+    text-transform: uppercase;
 }
 
 
-/*Стилизация при наведении*/
+/*6-ой блок.Стилизация при наведении*/
 
 .child-section-a:hover {
-    color: darksalmon;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 0 20px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
 }
 
 
 /*Стилизация при нажатии*/
 
 .child-section-a:active {
-    color: white;
-    background: -webkit-linear-gradient(top, hsl(2, 40%, 50%), hsl(0, 30%, 40%) 90%);
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #445161;
+    background-image: none;
 }
 
 
 /*7-ой блок.*/
 
-footer {
-    padding: 53px 0 0 0;
-    background-color: #445162;
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1280px;
+    padding: 50px;
+    background-color: #445161;
+    box-sizing: border-box;
 }
 
-.footer-h2:after {
-    content: "";
+
+/*7-ой блок. Заголовок*/
+
+.main-footer_title {
     display: block;
     width: 100%;
-    clear: both;
-}
-
-.footer-h2 {
-    margin: 0 0 31px 0;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center
-}
-
-footer>form {
-    width: 500px;
-    min-height: 354px;
-    margin: 0 0 0 249px;
-    float: left;
-}
-
-form>input[type="text"] {
-    display: block;
-    width: 484px;
-    height: 12px;
-    float: left;
-    border-radius: 6px;
-    margin: 0 0 20px 0;
-    padding: 14px 0 14px 10px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #445162;
-}
-
-#textarea-footer {
-    border-radius: 6px;
-    width: 487px;
-    height: 147px;
-    padding: 13px 0 0 10px;
-    margin: 0 0 21px 0;
+    margin: 0 0 30px 0;
     font-family: Arial;
-    font-size: 16px;
-    line-height: 24px;
+    color: #ffffff;
+    font-size: 30px;
     font-weight: 400;
-    color: #445162;
+    line-height: 36px;
+    text-align: center;
 }
 
-form>input[type="submit"] {
+
+/*7-ой блок. Форма*/
+
+.main-footer_form {
+    ` clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 0 46px 0 0;
+}
+
+
+/*7-ой блок. Стилизация элементов формы*/
+
+.main-footer_form input[type="text"],
+.main-footer_form input[type="email"],
+.main-footer_form textarea {
+    width: 100%;
+    min-height: 40px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    text-transform: capitalize;
+    resize: none;
+}
+
+
+/*7-ой блок. Стилизация textarea*/
+
+.main-footer_form textarea {
+    width: 100%;
+    min-height: 170px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/*7-ой блок. Стилизация placeholder элементов формы*/
+
+input[placeholder],
+textarea[placeholder] {
+    text-overflow: ellipsis;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+/*7-ой блок. Стилизация кнопки*/
+
+.main-footer_form input[type="submit"] {
+    border-radius: 5px;
+    background-color: #ffffff;
     width: 140px;
     height: 40px;
-    background-color: white;
-    border-radius: 6px;
-    margin: 0 0 49px 180px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
     text-transform: uppercase;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+
+/*7-ой блок. Стилизация элементов при наведении*/
+
+.main-footer_form input[type="text"]:hover,
+.main-footer_form input[type="email"]:hover,
+.main-footer_form textarea:hover {
+    background-color: #D6F4EF;
     color: #445162;
 }
 
-.div-contacts {
-    float: right;
-    margin: 0 291px 0 0;
-/*    border: 1px solid #fff;*/
+
+/*7-ой блок. Стилизация при наведении на кнопку формы*/
+
+.main-footer_form input[type="submit"]:hover {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 0 20px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .5s;
 }
 
-.div-contacts>ul {
-    margin: 0;
+
+/*7-ой блок. Стилизация при нажатии на кнопку формы*/
+
+.main-footer_form input[type="submit"]:active {
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #445161;
+    background-image: none;
 }
+
+
+/*7-ой блок. Блок с контактами*/
+
+.main-footer_contacts {
+    min-width: 194px;
+    float: right;
+    /*    border: 1px solid #fff;*/
+}
+
+
+/*7-ой блок. Убираем вн. отступы блока с контактами*/
+
+.main-footer_contacts>ul {
+    margin: 0 0 0 37px;
+    padding: 0;
+}
+
+
+/*7-ой блок. Стилизация пунктов блока контактов*/
 
 .footer-li {
     font-size: 16px;
@@ -680,6 +825,9 @@ form>input[type="submit"] {
     width: 165px;
 }
 
+
+/*7-ой блок. Псевдоэлемент скайп*/
+
 #skype:before {
     content: "";
     display: block;
@@ -688,10 +836,14 @@ form>input[type="submit"] {
     background-image: url(../img/319.png);
     -webkit-background-size: cover;
     background-size: cover;
-/*    border: 1px solid #fff;*/
+    /*    border: 1px solid #fff;*/
     position: absolute;
     left: -40px;
 }
+
+
+/*7-ой блок. Псевдоэлемент icq*/
+
 #icq:before {
     content: "";
     display: block;
@@ -700,10 +852,14 @@ form>input[type="submit"] {
     background-image: url(../img/324.png);
     -webkit-background-size: cover;
     background-size: cover;
-/*    border: 1px solid #fff;*/
+    /*    border: 1px solid #fff;*/
     position: absolute;
     left: -40px;
 }
+
+
+/*7-ой блок. Псевдоэлемент email*/
+
 #email:before {
     content: "";
     display: block;
@@ -712,10 +868,14 @@ form>input[type="submit"] {
     background-image: url(../img/332.png);
     -webkit-background-size: cover;
     background-size: cover;
-/*    border: 1px solid #fff;*/
+    /*    border: 1px solid #fff;*/
     position: absolute;
     left: -40px;
 }
+
+
+/*7-ой блок. Псевдоэлемент tel*/
+
 #tel:before {
     content: "";
     display: block;
@@ -724,16 +884,44 @@ form>input[type="submit"] {
     background-image: url(../img/337.png);
     -webkit-background-size: cover;
     background-size: cover;
-/*    border: 1px solid #fff;*/
+    /*    border: 1px solid #fff;*/
     position: absolute;
     left: -40px;
 }
 
-.div-social {}
 
-.div-social>a {}
+/*7-ой блок.*/
+
+.div-social {
+    min-width: 240px;
+    min-height: 42px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    } 
+
+
+/*7-ой блок.*/
+
+.div-social-a {
+    display: block;
+    min-width: 42px;
+    min-height: 42px;
+    font-family: Socialico;
+    font-size: 60px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*8-ой блок. Нижняя часть подвала*/
 
 .footer-p {
+    display: block;
+    width: 100%;
     clear: both;
     font-size: 11px;
     line-height: 30px;

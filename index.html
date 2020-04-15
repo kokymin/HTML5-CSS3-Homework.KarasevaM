@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>JS Bin</title>
 </head>
 
@@ -20,7 +21,7 @@
                     <li class="main-header-list-item">Associate the page with the payment system</li>
                 </ul>
             </div> 
-            <img class="main-header-img" src="#" alt="фото товара" width="200" height="150"> 
+            <div class="main-header-img background-images"></div>
             </header>
         <main class="content">
             <section class="about-product">
@@ -28,9 +29,12 @@
                     <h2>About your product</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
-                </div> 
-                <img class="about-product-img" src="#" alt="фото товара" width="430" height="245">
-                <!-- <video src="#" width="" height=""></video> -->
+                </div>
+                <video class="about-product-img" controls autoplay poster="img/Planet-Earth-II-poster.jpg" width="430" height="245">
+                    <source src="video/videoplayback.mp4">
+                    Элемент video не поддерживается вашим браузером.
+                    <a href="video/videoplayback.mp4">Скачайте видео</a>
+                </video>
             </section>
             <section class="dignity">
                 <h2>Dignity and pluses product</h2>
@@ -58,27 +62,29 @@
             <section class="screenshots">
                 <h2>Screenshots</h2>
                 <div class="screenshots-div">
-                    <figure class="screenshots-figure"> 
-                       <img src="#" alt="Скриншот" width="200" height="150">
+                    <figure class="screenshots-figure">
+                      <img id=screenshot1 alt="Скриншот 1" src="img/Screenshot1.jpg" width="200" height="150" class="screenshots-figure-img">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                         </figcaption>
                     </figure>
                     <figure class="screenshots-figure"> 
-                       <img src="#" alt="Скриншот" width="200" height="150">
+                      <img id=screenshot2 alt="Скриншот 2" src="img/Screenshot2.jpg" width="200" height="150" class="screenshots-figure-img">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                         </figcaption>
                     </figure>
-                    <figure class="screenshots-figure screenshots-figure-pb0"> <img src="#" alt="Скриншот" width="200" height="150">
+                    <figure class="screenshots-figure screenshots-figure-pb0"> 
+                      <img id=screenshot3 alt="Скриншот 3" src="img/Screenshot3.jpg" width="200" height="150" class="screenshots-figure-img">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                         </figcaption>
                     </figure>
-                    <figure class="screenshots-figure screenshots-figure-pb0"> <img src="#" alt="Скриншот" width="200" height="150">
+                    <figure class="screenshots-figure screenshots-figure-pb0"> 
+                      <img id=screenshot4 alt="Скриншот 4" src="img/Screenshot4.jpg" width="200" height="150" class="screenshots-figure-img">
                         <figcaption class="screenshots-figcaption">
                             <h3 class="screenshots-h3">The description for the image</h3>
                             <p class="screenshots-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
@@ -91,26 +97,34 @@
                 <div class="reviews-div">
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
-                           <span class="reviews-img" src="#" alt="аватарка" width="75" height="75"></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                           <span class="reviews-img"></span>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
-                           <span class="reviews-img" src="#" alt="аватарка" width="75" height="75"></span>
-                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                           <span class="reviews-img"></span>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
-                           <span class="reviews-img" src="#" alt="аватарка" width="75" height="75"></span>
-                            <p class="reviews-p reviews-p-margin0">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                           <span class="reviews-img" ></span>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                     <figure class="reviews-figure">
                         <figcaption class="reviews-figurecaption"> 
-                           <span class="reviews-img" src="#" alt="аватарка" width="75" height="75"></span>
-                            <p class="reviews-p reviews-p-margin0">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? <a class="reviews-a" href="#">Lourens S.</a> </p>
+                           <span class="reviews-img"></span>
+                            <p class="reviews-p">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur? 
+                            <a class="reviews-a" href="#">Lourens S.</a> 
+                            </p>
                         </figcaption>
                     </figure>
                 </div>
@@ -121,18 +135,20 @@
                     <section class="buy-child-section">
                         <div class="div-child-section">
                             <h3 class="child-section-h3">Standart</h3>
-                            <p class="child-section-p">&#36;100</p>
+                            <span class="child-section-p">&#36;100</span>
                             <ol class="child-section-ol">
                                 <li class="child-section-li">Porro officia cumque sint deleniti;</li>
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link" href="#link" class="child-section-a">BUY</a> </div>
+                            </ol> 
+                            <a id="link1" href="#link1" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                     <section class="buy-child-section">
                         <div class="div-child-section">
                             <h3 class="child-section-h3">Premium</h3>
-                            <p class="child-section-p">&#36;150</p>
+                            <span class="child-section-p">&#36;150</span>
                             <ol class="child-section-ol">
                                 <li class="child-section-li">Porro officia cumque sint deleniti;</li>
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
@@ -142,12 +158,14 @@
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link" href="#link" class="child-section-a">BUY</a> </div>
+                            </ol> 
+                            <a id="link2" href="#link2" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                     <section class="buy-child-section">
                         <div class="div-child-section">
                             <h3 class="child-section-h3">Lux</h3>
-                            <p class="child-section-p">&#36;150</p>
+                            <span class="child-section-p">&#36;150</span>
                             <ol class="child-section-ol">
                                 <li class="child-section-li">Porro officia cumque sint deleniti;</li>
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
@@ -162,20 +180,22 @@
                                 <li class="child-section-li">Тemo facere rem vitae odit;</li>
                                 <li class="child-section-li">Cum odio, iste quia doloribus autem;</li>
                                 <li class="child-section-li">Aperiam nulla ea neque.</li>
-                            </ol> <a id="link" href="#link" class="child-section-a">BUY</a> </div>
+                            </ol> 
+                            <a id="link3" href="#link3" class="child-section-a">buy</a> 
+                        </div>
                     </section>
                 </div>
             </section>
         </main>
-         <footer>
-            <h2 class="footer-h2">Contacts</h2>
-            <form action="" class="footer-form">
-            <input type="text" placeholder="Your name:">
-            <input type="text" placeholder="Your email:"> 
-            <textarea name="#" id="textarea-footer" placeholder="Your message:" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send">
+        <footer class="main-footer"> 
+           <span class="main-footer_title">Contacts</span>
+            <form class="main-footer_form" action="#" method="post">
+                <input type="text" placeholder="Your name:">
+                <input type="email" placeholder="Your email:">
+                <textarea placeholder="Your message:"></textarea>
+                <input type="submit" value="send"> 
             </form>
-            <div class="div-contacts">
+            <div class="main-footer_contacts">
                 <ul>
                     <li class="footer-li" id="skype">here_your_login_skype</li>
                     <li class="footer-li" id="icq">279679659</li>
@@ -183,12 +203,16 @@
                     <li class="footer-li" id="tel">80 00 4568 55 55</li>
                 </ul>
                 <div class="div-social">
-                <a href="#"></a>
+                    <a class="div-social-a" href="#">l</a>
+                    <a class="div-social-a" href="#">f</a>
+                    <a class="div-social-a" href="#">i</a>
+                    <a class="div-social-a" href="#">g</a>
+                    <a class="div-social-a" href="#">x</a>
+                </div>
+                
             </div>
-            </div>
-            
-            <p class="footer-p">Copyright &copy; 2014 Product name - PSD HTML CSS</p>
-        </footer> 
+        </footer>
+        <p class="footer-p">Copyright &copy; 2014 Product name - PSD HTML CSS</p>
     </div>
 </body>
 
